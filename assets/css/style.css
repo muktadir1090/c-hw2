@@ -6,6 +6,7 @@
 
 body {
     background-color: #090909;
+    color: white;
 }
 
 .header {
@@ -66,25 +67,21 @@ p {
     display: center
 }
 .float-center{
-    float: center;
-    margin: 0 auto;
+    display : flex;
+    justify-content: center;
 }
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
-.float-center {
-    float :center;
-    margin:auto;
-}
+
 
 .content {
-    width: 75%;
+    width: 100%;
     display: block;
     margin-left: 20px;
 }
-
 
 
 .quality-assurance {
