@@ -14,13 +14,16 @@ body {
     font-family: "Times New Roman", Times, serif, Arial, sans-serif;
     background-color:rgba(100, 18, 0, 0.4);
     color: #ffffff;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header h1 {
     text-align: center;
     font-size: 48px;
     padding: 30 px;
-    
+    margin-bottom: 20px;
 }
 
 .header h1 .cat {
@@ -35,15 +38,19 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
+.header nav ul {
     list-style-type: none;
 }
 
-.header div ul li {
+.header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+}
 a {
     color: #ffffff;
     text-decoration: none;
