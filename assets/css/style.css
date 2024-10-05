@@ -1,194 +1,187 @@
+/* Universal box-sizing to include padding and border in the element's total width and height. Resets default margin and padding */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Set the background color and text color for the entire body */
 body {
-    background-color: #090909;
-    color: white;
+    background-color: #090909; /* Dark background */
+    color: white; /* White text */
 }
 
+/* Header styling with padding, font, background transparency, and flexible layout */
 header {
     padding: 20px;
-    font-family: "Times New Roman", Times, serif, Arial, sans-serif;
-    background-color:rgba(100, 18, 0, 0.4);
-    color: #ffffff;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+    font-family: "Times New Roman", Times, serif, Arial, sans-serif; /* Fallback fonts */
+    background-color: rgba(100, 18, 0, 0.4); /* Semi-transparent background */
+    color: #ffffff; /* White text */
+    display: flex;
+    flex-direction: column; /* Aligns items in a column */
+    justify-content: center; /* Center aligns items vertically */
 }
 
+/* Styling for the main heading inside the header */
 header h1 {
-    text-align: center;
-    font-size: 48px;
-    padding: 30 px;
+    text-align: center; /* Center the heading */
+    font-size: 48px; /* Large font size */
+    padding: 30px;
     margin-bottom: 20px;
 }
 
+/* Class to style a portion of the header's h1 (for example, different color) */
 header h1 .cat {
-    color: #d9dcd6;
+    color: #d9dcd6; /* Light grey color */
 }
 
+/* Right-aligned div inside the header for additional information */
 header div {
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
+    float: right; /* Float this div to the right */
     font-family: "Times New Roman", Times, serif, Arial, sans-serif;
-    font-size: 20px;
+    font-size: 20px; /* Set font size */
 }
 
+/* Unordered list for the navigation menu (no bullet points) */
 header nav ul {
-    list-style-type: none;
+    list-style-type: none; /* Remove default list styling */
 }
 
+/* Display list items inline for horizontal navigation */
 header nav ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 25px; /* Space between items */
 }
 
+/* Navigation bar to center the links */
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the navigation links */
 }
+
+/* Basic link styling: white color and no underline */
 a {
-    color: #ffffff;
-    text-decoration: none;
+    color: #ffffff; /* White text */
+    text-decoration: none; /* Remove underline */
 }
 
+/* Paragraph styling for general text */
 p {
-    font-size: 18px;
+    font-size: 18px; /* Set font size */
+    padding: 50px; /* Padding around paragraphs */
 }
 
+/* Styling for the hero section, with a background image and fixed size */
 .hero {
     height: 800px;
     width: 30%;
     margin-top: 25px;
-    background-image: url("./image/profilepic.png");
-    background: size 30%; ;
-    background-position: center;
+    background-image: url("./image/profilepic.png"); /* Background image */
+    background-size: 30%; /* Size of background image */
+    background-position: center; /* Center the image */
 }
-.profile  img {
+
+/* Profile image styling for centering and setting max height and width */
+.profile img {
     max-height: 500px;
     max-width: 500px;
-    display: center
+    margin-left: 44%; /* Center image */
 }
-.float-center{
-    display : flex;
-    justify-content: center;
+
+/* Class to horizontally center content using flexbox */
+.float-center {
+    display: flex;
+    justify-content: center; /* Center items */
 }
+
+/* Float elements to the left, used for aligning content */
 .float-left {
     float: left;
-    margin-right: 25px;
+    margin-right: 25px; /* Margin to create space on the right */
 }
 
-
-
+/* Content block takes full width and is slightly offset from the left */
 .content {
     width: 100%;
     display: block;
     margin-left: 20px;
 }
 
-
-.quality-assurance {
+/* Section styling for different roles with padding and a semi-transparent background */
+.quality-assurance,
+.web-developer,
+.automation-engineer {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
     font-family: "Times New Roman", Times, serif, Arial, sans-serif;
-    background-color:rgba(100, 18, 0, 0.4);
-    color: #ffffff;
+    background-color: rgba(100, 18, 0, 0.4); /* Semi-transparent background */
+    color: #ffffff; /* White text */
 }
 
-.web-developer {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: "Times New Roman", Times, serif, Arial, sans-serif;
-    background-color:rgba(100, 18, 0, 0.4);
-    color: #ffffff;
-}
-
-.automation-engineer{
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: "Times New Roman", Times, serif, Arial, sans-serif;
-    background-color:rgba(100, 18, 0, 0.4);
-    color: #f0f3f0;
-}
-
-.quality-assuarnce img {
-    max-height: 300px;
-    
-}
-
-.web-developer img {
-    max-height: 300px;
-}
-
+/* Images in specific role sections are constrained to a maximum height */
+.quality-assurance img,
+.web-developer img,
 .automation-engineer img {
-    max-height: 300px;
+    max-height: 300px; /* Max height for images */
 }
 
-.quality-assurance h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.web-developer h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* Heading styling for specific sections, with a large font size */
+.quality-assurance h2,
+.web-developer h2,
 .automation-engineer h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 36px; /* Large font size for headings */
 }
 
+/* Footer styling with padding, centered text, and a black background */
 footer {
     padding: 30px;
     clear: both;
     font-family: "Times New Roman", Times, serif, Arial, sans-serif;
-    text-align: center;
-    background-color : black;
+    text-align: center; /* Center the footer text */
+    background-color: black; /* Black background */
 }
 
+/* Footer heading styling */
 footer > h4 {
-    font-size: 20px;
-    
+    font-size: 20px; /* Font size for footer headings */
 }
+
+/* General section styling, with top margin and height constraint */
 section {
     margin-top: 20px;
     padding: 10px;
-    height : 10vh;
- }
-
-section > h2 {
-    display : flex;
-    justify-content: center;
-    
+    height: 10vh;
 }
 
+/* Centered section headings */
+section > h2 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Centered section paragraphs */
 section p {
     margin: 0.5em 0;
-    display : flex;
-    justify-content: center;
+    display: flex;
+    justify-content: center; /* Center text */
 }
 
-a {
-    color: #f4f7f9;
-    text-decoration: none;
-}
-
+/* Hover effect for links: underline and change color */
 a:hover {
     text-decoration: underline;
-    color: rgb(19, 226, 71);
+    color: rgb(19, 226, 71); /* Bright green color on hover */
 }
+
+/* Media query for devices with a max width of 600px (responsive design) */
 @media (max-width: 600px) {
     header h1 {
-        font-size: 2em;
+        font-size: 2em; /* Reduce heading size on small screens */
     }
+
     .container {
         padding: 10px;
         margin: 10px;
